@@ -1,23 +1,21 @@
-<h1><strong>OptimizedHTML 4:</strong> <br>Startup HTML template based on Gulp & Bootstrap 4</h1>
+<h1>Real Estate Agency SPA</h1>
 
-<p>
-	<img src="https://raw.githubusercontent.com/agragregra/OptimizedHTML-4/master/app/img/preview.jpg" alt="Start HTML Template">
-</p>
 
-<p>Author: <a href="http://webdesign-master.ru" target="_blank">WebDesign Master</a></p>
 
-<p>OptimizedHTML is all-inclusive start HTML5 template with Bootstrap 4 (grid & reboot), Gulp, Sass, Browsersync, Autoprefixer, Clean-CSS, Uglify, Rsync and Bower (libs path) support. The template contains a <strong>.htaccess</strong> file with caching rules for web server.</p>
+<p>Author: <a href="https://www.linkedin.com/in/vasyl-melnychuk-231763132/" target="_blank">Vasyl Melnychuk</a></p>
 
-<p><strong>OptimizedHTML 4</strong> Start Template uses the best practices of web development.</p>
+<p>Real Estate Agency is all-inclusive HTML5 template with Bootstrap 4 (grid & reboot), Gulp, Sass, Browsersync, Autoprefixer, Clean-CSS, Uglify, Rsync and Bower (libs path) support. The template contains a <strong>.htaccess</strong> file with caching rules for web server.</p>
+
+<p><strong>Real Estate Agency</strong> Start Template uses the best practices of web development.</p>
 
 <p>Cross-browser compatibility: IE9+.</p>
 
 <p>The template uses a Sass with <strong>Sass</strong> or <strong>Scss</strong> syntax (optional).</p>
 
-<h2>How to use OptimizedHTML</h2>
+<h2>How to use Real Estate Agency </h2>
 
 <ol>
-	<li><a href="https://github.com/agragregra/OptimizedHTML-4/archive/master.zip">Download</a> <strong>OptimizedHTML 4</strong> from GitHub;</li>
+	<li><a href="https://github.com/vasya-skery/RealEstateAgency/archive/master.zip">Download</a> <strong>Real Estate Agency SPA</strong> from GitHub;</li>
 	<li>Install Node Modules: <strong>npm i</strong>;</li>
 	<li>Run the template: <strong>gulp</strong>.</li>
 </ol>
@@ -29,7 +27,7 @@
 	<li><strong>rsync</strong>: project deployment on the server from <strong>dist</strong> folder via <strong>RSYNC</strong>;</li>
 </ul>
 
-<h2>Rules for working with the starting HTML template</h2>
+<h2>Rules for working with the Real Estate Agency SPA</h2>
 
 <ol>
 	<li>All HTML files should have similar initial content as in <strong>app/index.html</strong>;</li>
