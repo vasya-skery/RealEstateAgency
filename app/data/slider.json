@@ -1,0 +1,32 @@
+[
+    {
+      "title": "Verified housing",
+      "url": "#",
+      "excerpt":"CSV or comma-separated-values is one of most popular file format used to store tabular data, such as a database or spreadsheet. Using new HTML5 FileReader API you can read a csv on fly, no server side interaction is required",
+      "cover":"img/slider/1.jpg"
+    },
+    {
+      "title": "Rental Property",
+      "url": "#",
+      "excerpt":"I recently posted myntra logo in pure CSS and I got a lot of positive feedback on how I created without using a single piece of an image. I decided to create another post to celebrate 67th Republic Day of India to explain how I managed to create animated Indian flag in pure CSS. I promise no image or javascript will be harmed during this experiment. lets get started ",
+      "cover":"img/slider/2.jpg"
+    },
+    {
+      "title": "Property For Sale",
+      "url": "#",
+      "excerpt":"I recently posted myntra logo in pure CSS and I got a lot of positive feedback on how I created without using a single piece of an image. I decided to create another post to celebrate 67th Republic Day of India to explain how I managed to create animated Indian flag in pure CSS. I promise no image or javascript will be harmed during this experiment. lets get started ",
+      "cover":"img/slider/3.jpg"
+    },
+    {
+      "title": "New buildings in Vinnitsa and Vinnitsa region",
+      "url": "#",
+      "excerpt":"I recently posted myntra logo in pure CSS and I got a lot of positive feedback on how I created without using a single piece of an image. I decided to create another post to celebrate 67th Republic Day of India to explain how I managed to create animated Indian flag in pure CSS. I promise no image or javascript will be harmed during this experiment. lets get started ",
+      "cover":"img/slider/4.jpg"
+    },
+    {
+      "title": "Animated Indian flag in pure Css, No Image, No Js.",
+      "url": "#",
+      "excerpt":"I recently posted myntra logo in pure CSS and I got a lot of positive feedback on how I created without using a single piece of an image. I decided to create another post to celebrate 67th Republic Day of India to explain how I managed to create animated Indian flag in pure CSS. I promise no image or javascript will be harmed during this experiment. lets get started ",
+      "cover":"img/slider/5.jpg"
+    }
+  ]

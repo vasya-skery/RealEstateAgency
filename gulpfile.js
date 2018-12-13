@@ -1,4 +1,4 @@
-var syntax        = 'sass'; // Syntax: sass or scss;
+var syntax        = 'scss'; // Syntax: sass or scss;
 
 var gulp          = require('gulp'),
 		gutil         = require('gulp-util' ),
@@ -36,8 +36,29 @@ gulp.task('styles', function() {
 
 gulp.task('js', function() {
 	return gulp.src([
+
+		// Libs
 		'app/libs/jquery/dist/jquery.min.js',
+		'app/libs/sammy/min/sammy-latest.min.js',
+		'app/libs/sammy/plugins/sammy.json.js',
+		'app/libs/sammy/min/plugins/sammy.template-latest.min.js',
+		'app/libs/slick-carousel/slick/slick.min.js',
+		'app/libs/handlebars/handlebars.js',
+		'app/libs/select2/dist/js/select2.js',
+		'app/libs/jquery-ui/jquery-ui.js',
+		'app/libs/highlight/jquery.highlight.js',
+		'app/libs/hilitor/hilitor.js',
+
+		// App
+
+		// App: Controllers
+		'app/js/controllers/home-controller.js',
+		'app/js/controllers/users-controllers.js',
+
+		// App: setup
+		'app/js/templates.js',
 		'app/js/common.js', // Always at the end
+		'app/js/data.js',
 		])
 	.pipe(concat('scripts.min.js'))
 	// .pipe(uglify()) // Mifify js (opt.)
@@ -60,10 +81,13 @@ gulp.task('rsync', function() {
 	}))
 });
 
-gulp.task('watch', ['styles', 'js', 'browser-sync'], function() {
+
+gulp.task('watch', ['styles', 'js',  'browser-sync'], function() {
 	gulp.watch('app/'+syntax+'/**/*.'+syntax+'', ['styles']);
-	gulp.watch(['libs/**/*.js', 'app/js/common.js'], ['js']);
-	gulp.watch('app/*.html', browserSync.reload)
+	gulp.watch(['libs/**/*.js', 'app/js/**/*.js'], ['js']);
+	gulp.watch('app/*.html', browserSync.reload);
+	gulp.watch('app/templates/*.template', browserSync.reload)
+	gulp.watch('app/data/*.json', browserSync.reload)
 });
 
 gulp.task('default', ['watch']);

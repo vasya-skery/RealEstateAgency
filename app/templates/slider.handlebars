@@ -1,0 +1,9 @@
+{{#each slider}}
+<article style="background-image: url(<%= item.cover %>);" class="item">
+  <section>
+    <h2 class="text-center">{{title}}</h2>
+    <p>{{excerpt}}></p>
+      <a href="#about" class="btn btn-custom btn-lg page-scroll">{{url}}</a>
+  </section>
+</article>
+{{/each}}
