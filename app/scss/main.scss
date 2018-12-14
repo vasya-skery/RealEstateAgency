@@ -584,6 +584,12 @@ label {
 #catalog {
   padding: 100px 0;
 }
+.card-img-slider .card-img-top .img {
+  height: 280px;
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+}
 
 // Reviews page
 #reviews {
@@ -628,5 +634,10 @@ label {
   font-size: 13px;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+// pre-order page
+#pre-order {
+  padding: 100px 0;
 }
 @import "media"; // Always at the end

@@ -51,6 +51,7 @@ gulp.task('js', function() {
 		'app/libs/highlight/jquery.highlight.js',
 		'app/libs/hilitor/hilitor.js',
 		'app/libs/twbspagination/jquery.twbsPagination.min.js',
+		'app/libs/json-easy-filter/jef-browser.js',
 
 		// App
 

@@ -121,7 +121,9 @@
         <div class="card">
            <div class="card-img-slider">
               {{#each images}}
-              <img class="card-img-top" src="{{image}}" alt="{{image-alt-text}}">
+              <div class="card-img-top"  title="{{image-alt-text}}">
+                <div class="img" style="background-image:url({{image}});"></div>
+              </div>
               {{/each}}
            </div>
           <div class="card-body">
@@ -137,6 +139,17 @@
     <script id="select2-template" type="text/x-handlebars-template">
        {{#each region}}
       <option value="">{{_name}}</option>
+       {{/each}}
+    </script>
+    <script id="services-template" type="text/x-handlebars-template">
+       {{#each services}}
+       <div class="col-md-4 item" aria-category="{{category}}">
+        <div class="service-media"><img src="{{image}}" alt="website template image"></div>
+            <div class="service-desc" >
+              <h3>{{title}}</h3>
+              <p>{{description}}</p>
+            </div>
+      </div>
        {{/each}}
     </script>
 

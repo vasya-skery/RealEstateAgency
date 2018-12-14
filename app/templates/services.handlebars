@@ -3,51 +3,74 @@
     <div class="section-title">
       <h2>Our Services</h2>
     </div>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="service-media"><img src="img/services/service-1.jpg" alt="website template image"></div>
-        <div class="service-desc">
-          <h3>New Home Construction</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.</p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="service-media"><img src="img/services/service-2.jpg" alt="website template image"></div>
-        <div class="service-desc">
-          <h3>Home Additions</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="service-media"><img src="img/services/service-3.jpg" alt="website template image"></div>
-        <div class="service-desc">
-          <h3>Bathroom Remodels</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.</p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="service-media"><img src="img/services/service-4.jpg" alt="website template image"></div>
-        <div class="service-desc">
-          <h3>Kitchen Remodels</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.</p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="service-media"><img src="img/services/service-5.jpg" alt="website template image"></div>
-        <div class="service-desc">
-          <h3>Windows &amp; Doors</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.</p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="service-media"><img src="img/services/service-6.jpg" alt="website template image"></div>
-        <div class="service-desc">
-          <h3>Decks &amp; Porches</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.</p>
-        </div>
-      </div>
+  <div class="form-group">
+    <label for="selectServicesCategory">Select category</label>
+    <select class="form-control" id="selectServicesCategory">
+      <option value="all">all</option>
+    </select>
+  </div>
+    <div id="services-list" class="row">
+      
     </div>
   </div>
 </div>
+
+
+<script>
+    $(document).ready(function () {
+    // get Data Services
+    $.ajax({
+      url: "data/data.json"
+    }).done(function (data) {
+      var source = document.getElementById("services-template").innerHTML;
+      var template = Handlebars.compile(source);
+      var html = template(data);
+      $("#services-list").append(html);
+    });
+    });
+</script>
+
+
+<script>
+
+  function unique(arr) {
+  var obj = {};
+
+  for (var i = 0; i < arr.length; i++) {
+    var str = arr[i];
+    obj[str] = true; // remember the string as the property of the object
+  }
+
+  return Object.keys(obj); // or collect bulk checking keys for IE8-
+}
+
+    $(document).ready(function () {
+    // get Data Services
+    $.ajax({
+      url: "data/data.json"
+    }).done(function (data) {
+      var res = new JefNode(data).filter(function(node) {
+            if (node.has('category')) {
+                  return node.value.category;
+                }
+        });
+        var uniqueRes = unique(res)
+    for (var i = 0;i < uniqueRes.length;i++) {
+      console.log(uniqueRes[i]);
+      $('#selectServicesCategory').append('<option value="'+ uniqueRes[i] +'">'+ uniqueRes[i] +'</option>');
+    }
+    
+    });
+    $('#selectServicesCategory').change(function(){
+      var $lelectVal = $('#selectServicesCategory').val();
+     // var $itemVal = $('#services-list .item').attr('aria-category');
+      $('#services-list .item').hide();
+      if ($lelectVal == 'all') {
+        $('#services-list .item').show();
+      } else {
+        $('#services-list .item').filter('[aria-category="'+$lelectVal+'"]').show();
+      }
+    });
+    });
+
+</script>

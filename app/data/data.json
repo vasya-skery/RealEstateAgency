@@ -30,6 +30,7 @@
   "services": [
     {
       "id": "1",
+      "category": "home",
       "image": "img/services/service-1.jpg",
       "image-alt-text": "website template image",
       "title": "New Home Construction",
@@ -37,6 +38,7 @@
     },
     {
       "id": "2",
+      "category": "home",
       "image": "img/services/service-2.jpg",
       "image-alt-text": "website template image",
       "title": "Home Additions",
@@ -44,13 +46,7 @@
     },
     {
       "id": "3",
-      "image": "img/services/service-3.jpg",
-      "image-alt-text": "website template image",
-      "title": "Bathroom Remodels",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
-    },
-    {
-      "id": "3",
+      "category": "room",
       "image": "img/services/service-3.jpg",
       "image-alt-text": "website template image",
       "title": "Bathroom Remodels",
@@ -58,9 +54,26 @@
     },
     {
       "id": "4",
-      "image": "img/services/service-3.jpg",
+      "category": "room",
+      "image": "img/services/service-4.jpg",
       "image-alt-text": "website template image",
-      "title": "Bathroom Remodels",
+      "title": "Kitchen Remodels",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    },
+    {
+      "id": "5",
+      "category": "other",
+      "image": "img/services/service-5.jpg",
+      "image-alt-text": "website template image",
+      "title": "Windows & Doors",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    },
+    {
+      "id": "6",
+      "category": "other",
+      "image": "img/services/service-6.jpg",
+      "image-alt-text": "website template image",
+      "title": "Decks & Porches",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
     }
   ],
@@ -86,7 +99,74 @@
       ],
       "adres": "Kiev, Shevchenkovsky, Tatarka, Nagornaya st., 18/16",
       "title": "Studio apartment in the residential complex Henesi House",
-      "description": "Service description"
+      "description": "Service description",
+      "category": "home"
+    },
+    {
+      "id": "2",
+      "price": "33 276",
+      "images": [
+        {
+          "image": "img/real-estate-items/2/1.jpg",
+          "image-alt-text": "alt text"
+        },
+        {
+          "image": "img/real-estate-items/2/2.png",
+          "image-alt-text": "alt text"
+        },
+        {
+          "image": "img/real-estate-items/2/3.jpg",
+          "image-alt-text": "alt text"
+        }
+      ],
+      "adres": "Kiev, Shevchenkovsky, Tatarka, Nagornaya st., 18/16",
+      "title": "Studio apartment in the residential complex Henesi House",
+      "description": "Service description",
+      "category": "home"
+    },
+    {
+      "id": "3",
+      "price": "33 276",
+      "images": [
+        {
+          "image": "img/real-estate-items/3/1.jpg",
+          "image-alt-text": "alt text"
+        },
+        {
+          "image": "img/real-estate-items/3/2.png",
+          "image-alt-text": "alt text"
+        },
+        {
+          "image": "img/real-estate-items/3/3.jpg",
+          "image-alt-text": "alt text"
+        }
+      ],
+      "adres": "Kiev, Shevchenkovsky, Tatarka, Nagornaya st., 18/16",
+      "title": "Studio apartment in the residential complex Henesi House",
+      "description": "Service description",
+      "category": "room"
+    },
+    {
+      "id": "4",
+      "price": "33 276",
+      "images": [
+        {
+          "image": "img/real-estate-items/4/1.jpg",
+          "image-alt-text": "alt text"
+        },
+        {
+          "image": "img/real-estate-items/4/2.png",
+          "image-alt-text": "alt text"
+        },
+        {
+          "image": "img/real-estate-items/4/3.jpg",
+          "image-alt-text": "alt text"
+        }
+      ],
+      "adres": "Kiev, Shevchenkovsky, Tatarka, Nagornaya st., 18/16",
+      "title": "Studio apartment in the residential complex Henesi House",
+      "description": "Service description",
+      "category": "room"
     },
     {
       "id": "1",
@@ -102,55 +182,8 @@
       ],
       "adres": "Kiev, Shevchenkovsky, Tatarka, Nagornaya st., 18/16",
       "title": "Studio apartment in the residential complex Henesi House",
-      "description": "Service description"
-    },
-    {
-      "id": "1",
-      "price": "33 276",
-      "images": [
-        {
-          "image": "img/real-estate-items/1/1.jpg",
-          "image-alt-text": "alt text"
-        },
-        {
-          "image": "img/real-estate-items/1/2.jpg"
-        }
-      ],
-      "adres": "Kiev, Shevchenkovsky, Tatarka, Nagornaya st., 18/16",
-      "title": "Studio apartment in the residential complex Henesi House",
-      "description": "Service description"
-    },
-    {
-      "id": "1",
-      "price": "33 276",
-      "images": [
-        {
-          "image": "img/real-estate-items/1/1.jpg",
-          "image-alt-text": "alt text"
-        },
-        {
-          "image": "img/real-estate-items/1/2.jpg"
-        }
-      ],
-      "adres": "Kiev, Shevchenkovsky, Tatarka, Nagornaya st., 18/16",
-      "title": "Studio apartment in the residential complex Henesi House",
-      "description": "Service description"
-    },
-    {
-      "id": "1",
-      "price": "33 276",
-      "images": [
-        {
-          "image": "img/real-estate-items/1/1.jpg",
-          "image-alt-text": "alt text"
-        },
-        {
-          "image": "img/real-estate-items/1/2.jpg"
-        }
-      ],
-      "adres": "Kiev, Shevchenkovsky, Tatarka, Nagornaya st., 18/16",
-      "title": "Studio apartment in the residential complex Henesi House",
-      "description": "Service description"
+      "description": "Service description",
+      "category": "other"
     },
     {
       "id": "1",
