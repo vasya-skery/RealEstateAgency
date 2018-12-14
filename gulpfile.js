@@ -39,7 +39,9 @@ gulp.task('js', function() {
 
 		// Libs
 		'app/libs/jquery/dist/jquery.min.js',
-		'app/libs/sammy/min/sammy-latest.min.js',
+		// 'app/libs/bootstrap/js/bootstrap.min.js',
+		// 'app/libs/popper.js/dist/popper.js',
+		'app/libs/sammy/sammy.js',
 		'app/libs/sammy/plugins/sammy.json.js',
 		'app/libs/sammy/min/plugins/sammy.template-latest.min.js',
 		'app/libs/slick-carousel/slick/slick.min.js',
@@ -48,6 +50,7 @@ gulp.task('js', function() {
 		'app/libs/jquery-ui/jquery-ui.js',
 		'app/libs/highlight/jquery.highlight.js',
 		'app/libs/hilitor/hilitor.js',
+		'app/libs/twbspagination/jquery.twbsPagination.min.js',
 
 		// App
 
@@ -57,8 +60,8 @@ gulp.task('js', function() {
 
 		// App: setup
 		'app/js/templates.js',
-		'app/js/common.js', // Always at the end
 		'app/js/data.js',
+		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))
 	// .pipe(uglify()) // Mifify js (opt.)

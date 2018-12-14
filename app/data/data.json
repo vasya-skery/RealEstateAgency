@@ -119,6 +119,102 @@
       "adres": "Kiev, Shevchenkovsky, Tatarka, Nagornaya st., 18/16",
       "title": "Studio apartment in the residential complex Henesi House",
       "description": "Service description"
+    },
+    {
+      "id": "1",
+      "price": "33 276",
+      "images": [
+        {
+          "image": "img/real-estate-items/1/1.jpg",
+          "image-alt-text": "alt text"
+        },
+        {
+          "image": "img/real-estate-items/1/2.jpg"
+        }
+      ],
+      "adres": "Kiev, Shevchenkovsky, Tatarka, Nagornaya st., 18/16",
+      "title": "Studio apartment in the residential complex Henesi House",
+      "description": "Service description"
+    },
+    {
+      "id": "1",
+      "price": "33 276",
+      "images": [
+        {
+          "image": "img/real-estate-items/1/1.jpg",
+          "image-alt-text": "alt text"
+        },
+        {
+          "image": "img/real-estate-items/1/2.jpg"
+        }
+      ],
+      "adres": "Kiev, Shevchenkovsky, Tatarka, Nagornaya st., 18/16",
+      "title": "Studio apartment in the residential complex Henesi House",
+      "description": "Service description"
+    },
+    {
+      "id": "1",
+      "price": "33 276",
+      "images": [
+        {
+          "image": "img/real-estate-items/1/1.jpg",
+          "image-alt-text": "alt text"
+        },
+        {
+          "image": "img/real-estate-items/1/2.jpg"
+        }
+      ],
+      "adres": "Kiev, Shevchenkovsky, Tatarka, Nagornaya st., 18/16",
+      "title": "Studio apartment in the residential complex Henesi House",
+      "description": "Service description"
+    },
+    {
+      "id": "1",
+      "price": "33 276",
+      "images": [
+        {
+          "image": "img/real-estate-items/1/1.jpg",
+          "image-alt-text": "alt text"
+        },
+        {
+          "image": "img/real-estate-items/1/2.jpg"
+        }
+      ],
+      "adres": "Kiev, Shevchenkovsky, Tatarka, Nagornaya st., 18/16",
+      "title": "Studio apartment in the residential complex Henesi House",
+      "description": "Service description"
+    },
+    {
+      "id": "1",
+      "price": "33 276",
+      "images": [
+        {
+          "image": "img/real-estate-items/1/1.jpg",
+          "image-alt-text": "alt text"
+        },
+        {
+          "image": "img/real-estate-items/1/2.jpg"
+        }
+      ],
+      "adres": "Kiev, Shevchenkovsky, Tatarka, Nagornaya st., 18/16",
+      "title": "Studio apartment in the residential complex Henesi House",
+      "description": "Service description"
+    },
+    {
+      "id": "1",
+      "price": "33 276",
+      "images": [
+        {
+          "image": "img/real-estate-items/1/1.jpg",
+          "image-alt-text": "alt text"
+        },
+        {
+          "image": "img/real-estate-items/1/2.jpg"
+        }
+      ],
+      "adres": "Kiev, Shevchenkovsky, Tatarka, Nagornaya st., 18/16",
+      "title": "Studio apartment in the residential complex Henesi House",
+      "description": "Service description"
     }
   ],
   "region": [

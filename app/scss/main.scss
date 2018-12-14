@@ -110,12 +110,17 @@ article a {
   }
 }
 .header-wrap {
+  background: rgba(255,255,255,0.1);
   position: fixed;
   width: 100%;
   left: 0;
   right: 0;
   top: 0;
   z-index: 1000;
+  transition: all 0.3s;
+  &.scroll {
+    background: #f6f6f6;
+  }
   h1 {
     text-transform: uppercase;
     font-weight: 900;
@@ -157,15 +162,16 @@ article a {
     }
   }
 }
-.header-wrap,
+
 .footer-wrap {
-  background: #f6f6f6;
+  background: rgba(246,246,246,0.5);
   p {
     color: #888;
     font-size: 14px;
     margin: 0;
   }
 }
+
 
 // nav
 
@@ -623,5 +629,4 @@ label {
   font-weight: bold;
   text-transform: uppercase;
 }
-
 @import "media"; // Always at the end
