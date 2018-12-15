@@ -55,21 +55,18 @@
         $('#rewiewsSearchInput').autocomplete({
         source: uniqueRes
       });
-    //for (var i = 0;i < uniqueRes.length;i++) {
-      //console.log(uniqueRes[i]);
-      //var availableTags  = uniqueRes[i];
-      
-    //}
     
     });
     $('#rewiewsSearchInput').keyup(function(){
-      var $lelectVal = $('#rewiewsSearchInput').val();
-      var $itemVal = $('#reviews-list .item').attr('aria-category');
-      $('#reviews-list .item').hide();
-      if ($lelectVal == '') {
-        $('#reviews-list .item').show();
-      } else {
-        $('#reviews-list .item').filter('[aria-autor="'+$lelectVal+'"]').show();
+      var $lelectVal = $('#rewiewsSearchInput').val().toLowerCase();
+      var $item = $('#reviews-list .item');
+        for (var i=0; i<$item.length; i++) {
+        var $itemVal = $item.eq(i).attr('aria-autor').toLowerCase();
+        if ($itemVal.indexOf($lelectVal) > -1) {
+          $('#reviews-list .item').eq(i).show();
+        } else {
+          $('#reviews-list .item').eq(i).hide();
+        }
       }
     });
     });
