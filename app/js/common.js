@@ -112,7 +112,7 @@ $(function() {
       url: "data/data.json"
     }).done(function(data) {
       // var json = JSON.parse(data);
-      console.log(data);
+      // console.log(data);
       var source = document.getElementById("slider-template").innerHTML;
       var template = Handlebars.compile(source);
       var html = template(data);

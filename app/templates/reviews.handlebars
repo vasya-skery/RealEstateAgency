@@ -3,62 +3,75 @@
     <div class="section-title">
       <h2>Reviews</h2>
     </div>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="testimonial">
-          <div class="testimonial-image"><img src="img/testimonials/01.jpg" alt="website template image"></div>
-          <div class="testimonial-content">
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."</p>
-            <div class="testimonial-meta"> - John Doe</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="testimonial">
-          <div class="testimonial-image"><img src="img/testimonials/02.jpg" alt="website template image"></div>
-          <div class="testimonial-content">
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis."</p>
-            <div class="testimonial-meta"> - Johnathan Doe</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="testimonial">
-          <div class="testimonial-image"><img src="img/testimonials/03.jpg" alt="website template image"></div>
-          <div class="testimonial-content">
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."</p>
-            <div class="testimonial-meta"> - John Doe</div>
-          </div>
-        </div>
-      </div>
-      <div class="row"></div>
-      <div class="col-md-4">
-        <div class="testimonial">
-          <div class="testimonial-image"><img src="img/testimonials/04.jpg" alt="website template image"></div>
-          <div class="testimonial-content">
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."</p>
-            <div class="testimonial-meta"> - Johnathan Doe</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="testimonial">
-          <div class="testimonial-image"><img src="img/testimonials/05.jpg" alt="website template image"></div>
-          <div class="testimonial-content">
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."</p>
-            <div class="testimonial-meta"> - John Doe</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="testimonial">
-          <div class="testimonial-image"><img src="img/testimonials/06.jpg" alt="website template image"></div>
-          <div class="testimonial-content">
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis."</p>
-            <div class="testimonial-meta"> - Johnathan Doe</div>
-          </div>
-        </div>
-      </div>
+    <form>
+    <div class="form-group">
+      <label for="rewiewsSearchInput">Example label</label>
+      <input type="text" class="form-control" id="rewiewsSearchInput" placeholder="Example input">
+    </div>
+  </form>
+    <div class="row" id="reviews-list">
     </div>
   </div>
 </div>
+
+<script>
+    $(document).ready(function () {
+    // get Data Reviews
+    $.ajax({
+      url: "data/data.json"
+    }).done(function (data) {
+      var source = document.getElementById("reviews-template").innerHTML;
+      var template = Handlebars.compile(source);
+      var html = template(data);
+      $("#reviews-list").append(html);
+    });
+    });
+</script>
+
+<script>
+
+  function unique(arr) {
+  var obj = {};
+
+  for (var i = 0; i < arr.length; i++) {
+    var str = arr[i];
+    obj[str] = true; // remember the string as the property of the object
+  }
+
+  return Object.keys(obj); // or collect bulk checking keys for IE8-
+}
+
+    $(document).ready(function () {
+    // get Data Services
+    $.ajax({
+      url: "data/data.json"
+    }).done(function (data) {
+      var res = new JefNode(data).filter(function(node) {
+            if (node.parent && node.parent.key==='reviews') {
+                  return node.value.autor;
+                }
+        });
+        var uniqueRes = unique(res);
+        $('#rewiewsSearchInput').autocomplete({
+        source: uniqueRes
+      });
+    //for (var i = 0;i < uniqueRes.length;i++) {
+      //console.log(uniqueRes[i]);
+      //var availableTags  = uniqueRes[i];
+      
+    //}
+    
+    });
+    $('#rewiewsSearchInput').keyup(function(){
+      var $lelectVal = $('#rewiewsSearchInput').val();
+      var $itemVal = $('#reviews-list .item').attr('aria-category');
+      $('#reviews-list .item').hide();
+      if ($lelectVal == '') {
+        $('#reviews-list .item').show();
+      } else {
+        $('#reviews-list .item').filter('[aria-autor="'+$lelectVal+'"]').show();
+      }
+    });
+    });
+
+</script>

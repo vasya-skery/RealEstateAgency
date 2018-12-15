@@ -54,9 +54,9 @@
                   return node.value.category;
                 }
         });
-        var uniqueRes = unique(res)
+        var uniqueRes = unique(res);
     for (var i = 0;i < uniqueRes.length;i++) {
-      console.log(uniqueRes[i]);
+      //console.log(uniqueRes[i]);
       $('#selectServicesCategory').append('<option value="'+ uniqueRes[i] +'">'+ uniqueRes[i] +'</option>');
     }
     

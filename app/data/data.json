@@ -80,9 +80,41 @@
   "reviews": [
     {
       "id": "1",
-      "autor": "Vasyl Melnychuk",
-      "text-review": "Service description"
+      "image": "img/testimonials/01.jpg",
+      "autor": "Jamie W. Herrington",
+      "text-review": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    },
+    {
+      "id": "2",
+      "image": "img/testimonials/02.jpg",
+      "autor": "John Doe",
+      "text-review": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    },
+    {
+      "id": "3",
+      "image": "img/testimonials/03.jpg",
+      "autor": "Shelley R. Pond",
+      "text-review": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    },
+    {
+      "id": "4",
+      "image": "img/testimonials/04.jpg",
+      "autor": "Matthew S. Clem",
+      "text-review": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    },
+    {
+      "id": "5",
+      "image": "img/testimonials/05.jpg",
+      "autor": "Sara R. Stevens",
+      "text-review": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    },
+    {
+      "id": "6",
+      "image": "img/testimonials/06.jpg",
+      "autor": "Johanna C. Stewart",
+      "text-review": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
     }
+    
   ],
   "object": [
     {

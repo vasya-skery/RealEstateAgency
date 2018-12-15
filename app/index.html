@@ -43,7 +43,7 @@
       <header class="container-fluid clearfix">
         <div class="row">
           <div class="col-md-4 my-auto">
-            <h1 class="title">Real Estate Agency SPA</h1>
+            <h1 class="title"><a class="logo" href="#/">Real Estate Agency SPA</a></h1>
           </div>
           <div class="col my-auto">
             <div id="searchform">
@@ -149,6 +149,19 @@
               <h3>{{title}}</h3>
               <p>{{description}}</p>
             </div>
+      </div>
+       {{/each}}
+    </script>
+    <script id="reviews-template" type="text/x-handlebars-template">
+       {{#each reviews}}
+       <div class="col-md-4 item" aria-autor="{{autor}}">
+        <div class="testimonial">
+          <div class="testimonial-image"><img src="{{image}}" alt="website template image"></div>
+          <div class="testimonial-content">
+            <p>"{{text-review}}"</p>
+            <div class="testimonial-meta"> - {{autor}}</div>
+          </div>
+        </div>
       </div>
        {{/each}}
     </script>
