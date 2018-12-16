@@ -1,0 +1,53 @@
+<div id="login">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="section-title">
+                    <h2>Login user</h2>
+                </div>
+                <div class="form-group">
+                    <label for="tb-username">Username: </label>
+                    <input type="text" id="tb-username" class="form-control" name="name" value="">
+                </div>
+                <div class="form-group">
+                    <label for="tb-password">Password: </label>
+                    <input type="password" id="tb-password" class="form-control" name="name" value="">
+                </div>
+                <button class="btn btn-danger" id="btn-login">Login</button>
+                <a href="#/register" class="btn btn-primary">I do not have an account</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    $(document).ready(function(){
+        $.ajax({
+        url: "data/data.json"
+      }).done(function (data) {
+        var login = new JefNode(data).filter(function(node) {
+              if (node.parent && node.parent.key==='users') {
+                    return node.value.login;
+                  }
+          });
+        var password = new JefNode(data).filter(function(node) {
+              if (node.parent && node.parent.key==='users') {
+                    return node.value.password;
+                  }
+          });
+          $('#btn-login').click(function(){
+            var $logintVal = $('#tb-username').val();
+            var $passtVal = $('#tb-password').val();
+            if (login.indexOf($logintVal) > -1 && password.indexOf($passtVal) > -1) {
+                console.log('login done');
+                localStorage.setItem('login', login);
+                window.location.href = '/#/profile/';
+            } else {
+                alert('login fail');
+            }
+          });
+      
+      });
+    });
+</script>

@@ -192,6 +192,7 @@ article a {
     display: block;
     margin-bottom: 10px;
     padding: 15px 0;
+    min-width: 90px;
     text-align: center;
     text-decoration: none;
     font-weight: bold;
@@ -643,6 +644,45 @@ label {
 
 // pre-order page
 #pre-order {
+  padding: 100px 0;
+}
+#login {
+  padding: 100px 0;
+}
+#register {
+  padding: 100px 0;
+}
+#home-services {
+  padding: 100px 0;
+}
+.features-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-align: center;
+  font-size: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+} 
+.features__item {
+  display: inline-block;
+  vertical-align: top;
+  padding: 15px;
+  margin-right: 5%;
+  width: 16%;
+  font-size: 18px;
+  &:last-child {
+    margin-right: 0;
+  }
+  .icon {
+    font-size: 70px;
+    margin-bottom: 30px;
+    color: #1f386e;
+  }
+}
+
+#profile {
   padding: 100px 0;
 }
 @import "media"; // Always at the end

@@ -24,6 +24,7 @@
       "login": "admin",
       "name": "Vasyl",
       "surname": "Melnychuk",
+      "password": "qwerty123",
       "type": "admin"
     }
   ],

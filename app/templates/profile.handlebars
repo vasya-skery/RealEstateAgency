@@ -1,0 +1,26 @@
+<div id="profile">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-title">
+                    <h2>Profile</h2>
+                    <h3>Hi <span id="login"></span></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    $(document).ready(function(){
+        function getUserLogin() {
+            var login = localStorage.getItem('login');
+            console.log(localStorage.getItem('login'));
+            $('#login').append(login);
+            setTimeout(function(){
+            }, 400);
+        }
+        getUserLogin();
+    });
+</script>

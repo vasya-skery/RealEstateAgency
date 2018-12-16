@@ -65,12 +65,12 @@ jQuery(function($) {
         .appendTo(context.$element());
     });
 
-    this.get("#/article/:id", function(context) {
+    this.get("#/object/:id", function(context) {
       this.item = this.items[this.params["id"]];
       if (!this.item) {
         return this.notFound();
       }
-      this.partial("templates/article-detail.handlebars");
+      this.partial("templates/object-detail.handlebars");
     });
 
     this.get("#/services/", function(context) {
@@ -78,6 +78,14 @@ jQuery(function($) {
       context.app.swap("");
       context
         .render("templates/services.handlebars", {})
+        .appendTo(context.$element());
+    });
+
+    this.get("#/profile/", function(context) {
+      var str = location.href.toLowerCase();
+      context.app.swap("");
+      context
+        .render("templates/profile.handlebars", {})
         .appendTo(context.$element());
     });
 

@@ -1,0 +1,15 @@
+{
+  "name": "write-json-file",
+  "homepage": "https://github.com/sindresorhus/write-json-file",
+  "version": "3.0.2",
+  "_release": "3.0.2",
+  "_resolution": {
+    "type": "version",
+    "tag": "v3.0.2",
+    "commit": "21479a68035f1a69f0ec009c23c4bf41c696eba2"
+  },
+  "_source": "https://github.com/sindresorhus/write-json-file.git",
+  "_target": "^3.0.2",
+  "_originalSource": "https://github.com/sindresorhus/write-json-file.git",
+  "_direct": true
+}
