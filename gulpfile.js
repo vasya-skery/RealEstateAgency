@@ -58,6 +58,14 @@ gulp.task('js', function() {
 		// App: Controllers
 		'app/js/controllers/home-controller.js',
 		'app/js/controllers/users-controllers.js',
+		'app/js/controllers/about-controllers.js',
+		'app/js/controllers/contacts-controllers.js',
+		'app/js/controllers/services-controllers.js',
+		'app/js/controllers/catalog-controllers.js',
+		'app/js/controllers/reviews-controllers.js',
+		'app/js/controllers/pre-order-controllers.js',
+		'app/js/controllers/object-controllers.js',
+		'app/js/controllers/profile-controllers.js',
 
 		// App: setup
 		'app/js/templates.js',

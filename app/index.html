@@ -42,7 +42,7 @@
     <div class="header-wrap">
       <header class="container-fluid clearfix">
         <div class="row">
-          <div class="col-md-4 my-auto">
+          <div class="col-sm-6 col-md-3 col-lg-4 my-auto">
             <h1 class="title"><a class="logo" href="#/">Real Estate Agency SPA</a></h1>
           </div>
           <div class="col my-auto">
@@ -59,7 +59,12 @@
               <button id="submit" class="search-button"><i class="fas fa-search"></i></button>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-8 col-lg-7 col-xl-6">
+            <div class="mob-nav-btn" onclick="myFunction(this)">
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
+            </div>
             <nav class="nav">
               <ul>
                 <li><a href="#/">Home</a></li>
@@ -163,7 +168,7 @@
     </script>
     <script id="reviews-template" type="text/x-handlebars-template">
        {{#each reviews}}
-       <div class="col-md-4 item" aria-autor="{{autor}}">
+       <div class="col-lg-4 col-md-6 item" aria-autor="{{autor}}">
         <div class="testimonial">
           <div class="testimonial-image"><img src="{{image}}" alt="website template image"></div>
           <div class="testimonial-content">

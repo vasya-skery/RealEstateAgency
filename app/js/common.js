@@ -17,77 +17,22 @@ jQuery(function($) {
     this.get("#/login", usersController.login);
     this.get("#/register", usersController.register);
 
-    this.get("#/about/", function(context) {
-      var str = location.href.toLowerCase();
-      context.app.swap("");
-      context
-        .render("templates/about.handlebars", {})
-        .appendTo(context.$element());
-    });
+    this.get("#/about/", aboutController.all);
 
-    this.get("#/contacts/", function(context) {
-      var str = location.href.toLowerCase();
-      context.app.swap("");
-      context
-        .render("templates/contacts.handlebars", {})
-        .appendTo(context.$element());
-    });
+    this.get("#/contacts/", contactsController.all);
 
-    this.get("#/services/", function(context) {
-      var str = location.href.toLowerCase();
-      context.app.swap("");
-      context
-        .render("templates/services.handlebars", {})
-        .appendTo(context.$element());
-    });
+    this.get("#/services/", servicesController.all);
 
-    this.get("#/catalog/", function(context) {
-      var str = location.href.toLowerCase();
-      context.app.swap("");
-      context
-        .render("templates/catalog.handlebars", {})
-        .appendTo(context.$element());
-    });
+    this.get("#/catalog/", catalogController.all);
 
-    this.get("#/reviews/", function(context) {
-      var str = location.href.toLowerCase();
-      context.app.swap("");
-      context
-        .render("templates/reviews.handlebars", {})
-        .appendTo(context.$element());
-    });
+    this.get("#/reviews/", reviewsController.all);
 
-    this.get("#/pre-order/", function(context) {
-      var str = location.href.toLowerCase();
-      context.app.swap("");
-      context
-        .render("templates/pre-order.handlebars", {})
-        .appendTo(context.$element());
-    });
+    this.get("#/pre-order/", preOrderController.all);
 
-    this.get("#/object/:id", function(context) {
-      this.item = this.items[this.params["id"]];
-      if (!this.item) {
-        return this.notFound();
-      }
-      this.partial("templates/object-detail.handlebars");
-    });
+    this.get("#/object/:id", objectController.all);
 
-    this.get("#/services/", function(context) {
-      var str = location.href.toLowerCase();
-      context.app.swap("");
-      context
-        .render("templates/services.handlebars", {})
-        .appendTo(context.$element());
-    });
 
-    this.get("#/profile/", function(context) {
-      var str = location.href.toLowerCase();
-      context.app.swap("");
-      context
-        .render("templates/profile.handlebars", {})
-        .appendTo(context.$element());
-    });
+    this.get("#/profile/", profileController.all);
 
     this.before(".*", function() {
       var hash = document.location.hash;
@@ -114,6 +59,16 @@ $(function() {
       // init slider
       $("#slider").slick();
     }, 1000);
+
+    // mobile nav toggle
+    $('.mob-nav-btn').click(function(){
+      $(this).toggleClass('active');
+      $('.nav').toggleClass('active');
+    });
+    $('.nav a').click(function(){
+      $('.nav').removeClass('active');
+      $('.mob-nav-btn').removeClass('active');
+    });
 
     // get Data slider
     $.ajax({

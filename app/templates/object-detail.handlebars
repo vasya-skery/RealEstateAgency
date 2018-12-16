@@ -1,10 +1,15 @@
-{{#each item}}
-<a href="#/" class="back">Back</a>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      {{!-- {{#each object.id}} --}}
 <article>
   <section>
-    <h2><%= item.title %></h2>
-    <img src="<%= item.cover %>" width="600px" height="290px"/>
-    <p><%= item.excerpt %><a href="<%= item.url %>" target="_blank"> Read more...</a></p>
+    <h2>{{object.title}}123</h2>
+    <img src="{{object.cover}}"/>
+    <p>{{object.excerpt}}</p>
   </section>
 </article>
-{{/each}}
+{{!-- {{/each}} --}}
+    </div>
+  </div>
+</div>
