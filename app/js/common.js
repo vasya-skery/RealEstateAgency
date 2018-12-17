@@ -30,6 +30,11 @@ jQuery(function($) {
     this.get("#/pre-order/", preOrderController.all);
 
     this.get("#/object/:id", objectController.all);
+    // this.get('#/object/:id', function(context) {
+    //   this.item = this.items.object[this.params['id']];
+    //   if (!this.item) { return this.notFound(); }
+    //   this.partial('templates/object-detail.handlebars');
+    // });
 
 
     this.get("#/profile/", profileController.all);
@@ -113,5 +118,9 @@ window.addEventListener("DOMContentLoaded", function(e) {
     myHilitor2.apply(this.value);
   }, false);
 }, false);
+
+
+
+
 
 

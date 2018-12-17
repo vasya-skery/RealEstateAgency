@@ -1,0 +1,42 @@
+<div id="object-detail" data-location-lat="<%= item.locationLat %>" data-location-lng="<%= item.locationLng %>">
+    <div class="container">
+        <div class="row">
+          <div class="col-md-9">
+            <article>
+              <section>
+                <div class="section-title">
+                    <h2><%= item.title %></h2>
+                </div>
+                <div id="object-img">
+                  <img src="<%= item.cover %>" alt="">
+                </div>
+                <div class="building__info">
+                  <div class="icons">
+                    <ul>
+                      <li class="rooms">
+                        <i class="fas fa-calculator"></i>
+                        <%= item.rooms %>
+                          <span>rooms</span>
+                      </li>
+                      <li class="square">
+                        <i class="fas fa-pencil-ruler"></i>
+                        <%= item.square %>
+                          <span>sq.m.</span>
+                      </li>
+                      <li class="floor">
+                        <i class="far fa-building"></i>
+                        <%= item.floor %>
+                          <span>floor</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <p><%= item.description %></p>
+              </section>
+            </article>
+          </div>
+          <div class="col-md-3">
+        </div>
+      </div>
+</div>
+

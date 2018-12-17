@@ -52,9 +52,9 @@ gulp.task('js', function() {
 		'app/libs/hilitor/hilitor.js',
 		'app/libs/twbspagination/jquery.twbsPagination.min.js',
 		'app/libs/json-easy-filter/jef-browser.js',
-
+		
 		// App
-
+		
 		// App: Controllers
 		'app/js/controllers/home-controller.js',
 		'app/js/controllers/users-controllers.js',
@@ -66,12 +66,13 @@ gulp.task('js', function() {
 		'app/js/controllers/pre-order-controllers.js',
 		'app/js/controllers/object-controllers.js',
 		'app/js/controllers/profile-controllers.js',
-
+		
 		// App: setup
 		'app/js/templates.js',
 		'app/js/data.js',
+		'app/js/catalog-filter.js',
 		'app/js/common.js', // Always at the end
-		])
+	])
 	.pipe(concat('scripts.min.js'))
 	// .pipe(uglify()) // Mifify js (opt.)
 	.pipe(gulp.dest('app/js'))
