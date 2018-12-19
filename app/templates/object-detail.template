@@ -31,7 +31,12 @@
                     </ul>
                   </div>
                 </div>
-                <p><%= item.description %></p>
+                <p class="description">
+                  <strong>Descriptioon: </strong>
+                  <span class="text">
+                      <%= item.description %>
+                  </span>
+                </p>
               </section>
             </article>
           </div>

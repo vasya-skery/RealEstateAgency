@@ -688,108 +688,49 @@ label {
 
 
 // Single Catalog page
-.single-product {
-  z-index: 100;
-}
-
-.overlay {
-  height: 20px;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #282b2c;
-  transition: 0.6s;
-  z-index: 100;
-}
-
-.single-product.visible .overlay {
-  height: 100%;
-}
-
-.preview-large {
-  box-sizing: border-box;
-  width: 760px;
-  height: 550px;
-  position: fixed;
-  left: 50%;
-  margin-left: -375px;
-  top: 50%;
-  margin-top: -275px;
-  pointer-events: none;
-  border-radius: 6px;
-  background-color: #ffffff;
-  z-index: 102;
-  opacity: 0;
-  transition: 0.4s;
-}
-
-.single-product.visible .preview-large {
-  opacity: 1;
-  transition: 1.4s;
-  pointer-events: auto;
-}
-
-.preview-large {
-  h3 {
-    margin-top: 20px;
-  }
-  img {
-    width: 100%;
-    height: 280px;
-    border-bottom: 3px solid #efefef;
-    border-radius: 5px 5px 0 0;
-  }
-  p {
-    line-height: 23px;
-    padding: 50px 45px;
-  }
-}
-
-.close {
-  position: absolute;
-  right: 25px;
-  top: 15px;
-  font-size: 28px;
-  color: #555;
-  cursor: pointer;
-}
-
 #object-detail {
   padding: 100px 0;
-}
-.building__info {
-  padding-top: 50px;
-  .icons {
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      display: block;
-      clear: both;
-      position: relative;
-      &::before, &::after {
-        content: '';
-        display: table;
+  .description {
+    display: flex;
+    margin-top: 15px;
+    .text {
+      padding-left: 15px;
+    }
+  }
+  .building__info {
+    padding-top: 50px;
+    .icons {
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: block;
         clear: both;
+        position: relative;
+        &::before, &::after {
+          content: '';
+          display: table;
+          clear: both;
+        }
+      }
+      li {
+        min-width: 33.3%;
+        float: left;
+        text-align: left;
+        color: #38444C;
+        margin-bottom: 25px;
+        font-size: 36px;
+        span {
+          font-size: 16px;
+          margin-left: 7px;
+        }
+        i[class*="fa-"] {
+          font-size: 50px;
+          color: #1f386e;
+        }
       }
     }
-    li {
-      min-width: 33.3%;
-      float: left;
-      text-align: left;
-      color: #38444C;
-      margin-bottom: 25px;
-      font-size: 36px;
-      span {
-        font-size: 16px;
-        margin-left: 7px;
-      }
-      i[class*="fa-"] {
-        font-size: 50px;
-        color: #1f386e;
-      }
-    }
+    
   }
 }
 

@@ -39,8 +39,6 @@ gulp.task('js', function() {
 
 		// Libs
 		'app/libs/jquery/dist/jquery.min.js',
-		// 'app/libs/bootstrap/js/bootstrap.min.js',
-		// 'app/libs/popper.js/dist/popper.js',
 		'app/libs/sammy/sammy.js',
 		'app/libs/sammy/plugins/sammy.json.js',
 		'app/libs/sammy/min/plugins/sammy.template-latest.min.js',
@@ -53,7 +51,7 @@ gulp.task('js', function() {
 		'app/libs/twbspagination/jquery.twbsPagination.min.js',
 		'app/libs/json-easy-filter/jef-browser.js',
 		
-		// App
+		// App 
 		
 		// App: Controllers
 		'app/js/controllers/home-controller.js',
@@ -74,7 +72,7 @@ gulp.task('js', function() {
 		'app/js/common.js', // Always at the end
 	])
 	.pipe(concat('scripts.min.js'))
-	// .pipe(uglify()) // Mifify js (opt.)
+	.pipe(uglify()) // Mifify js (opt.)
 	.pipe(gulp.dest('app/js'))
 	.pipe(browserSync.reload({ stream: true }))
 });

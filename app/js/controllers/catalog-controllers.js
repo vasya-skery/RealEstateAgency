@@ -3,7 +3,7 @@ var catalogController = function(){
         templates.get('catalog')
         .then(function(template) {
             context.$element().html(template());
-        })
+        });
     }
     
     return {
