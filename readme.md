@@ -4,13 +4,19 @@
 
 <p>Author: <a href="https://www.linkedin.com/in/vasyl-melnychuk-231763132/" target="_blank">Vasyl Melnychuk</a></p>
 
-<p>Real Estate Agency is all-inclusive HTML5 template with Bootstrap 4 (grid & reboot), Gulp, Sass, Browsersync, Autoprefixer, Clean-CSS, Uglify, Rsync and Bower (libs path) support. The template contains a <strong>.htaccess</strong> file with caching rules for web server.</p>
+The final project for front-end programming (javascript) training. The project is implemented as a one-page application using summy.js and hundlebars. All data in the project is generated from the json file. When you enter the correct username and password is redirected to the user page. On the services page, it is possible to display services from one category. Categories are loaded automatically from the json file and displayed in the drop-down list without duplication. On the feedback page, a search by name is implemented, when the user begins to enter a name, only those reviews that match the ones entered in the search field remain. In the header of the site there is a search that looks for matches on the page. On the catalog page implemented pagination pages. Each ad has a slider with pictures in which the pictures adapt to the size of the slider, and are well displayed on different screens. The application has a responsive design using media queries. Also implemented a mobile menu, which leaves the right side when you press a button. On the "Contacts" page there is a map implemented via google api.
 
-<p><strong>Real Estate Agency</strong> Start Template uses the best practices of web development.</p>
+The whole project is built using Gulp version 3.9.1. The following utilities are also used:
+* "gulp-autoprefixer": "^6.0.0" - Autoprefixer
+* "gulp-clean-css": "^4.0.0" - minify CSS
+* "gulp-concat": "^2.6.1" - Concatenates files
+* "gulp-notify": "^3.2.0" - Send messages to Notification Center
+* "gulp-rename": "^1.4.0" - rename files
+* "gulp-rsync": "0.0.8" - upload to server
+* "gulp-sass": "^4.0.2" - Sass (scss) preprocessor
+* "gulp-uglify": "^3.0.1" - Minify JavaScript with UglifyJS3
+* "gulp-util": "^3.0.8" - Utility functions for gulp plugins
 
-<p>Cross-browser compatibility: IE9+.</p>
-
-<p>The template uses a Sass with <strong>Sass</strong> or <strong>Scss</strong> syntax (optional).</p>
 
 <h2>How to use Real Estate Agency </h2>
 
