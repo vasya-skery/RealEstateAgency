@@ -17,6 +17,20 @@ The whole project is built using Gulp version 3.9.1. The following utilities are
 * "gulp-uglify": "^3.0.1" - Minify JavaScript with UglifyJS3
 * "gulp-util": "^3.0.8" - Utility functions for gulp plugins
 
+## Built With
+
+* [jquery.js](https://jquery.com/) - Javascript library
+* [Summy.js](http://sammyjs.org/) - Routing
+* [Bootstrap 4](https://getbootstrap.com/) - css framework
+* [slick](http://kenwheeler.github.io/slick/) - Jquery slider plugin
+* [handlebars](https://handlebarsjs.com/) - Javascript library for repeat content with routing
+* [select2](https://select2.org/) - Multiple select in input
+* [jquery-ui](https://jqueryui.com/) - Using for autocomplite in input
+* [highlight.js](https://johannburkard.de/blog/programming/javascript/highlight-javascript-text-higlighting-jquery-plugin.html) - text higlighting jQuery plugin
+* [hilitor](https://www.the-art-of-web.com/javascript/search-highlight/) - Search Keyword Highlighting
+* [twbsPagination](https://) - jQuery pagination plugin (bootstrap powered)
+* [json-easy-filter](https://) - Javascript node module for programmatic filtering and validation of Json objects.
+
 
 <h2>How to use Real Estate Agency </h2>
 
